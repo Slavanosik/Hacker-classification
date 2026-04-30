@@ -1,0 +1,17 @@
+<svg width="89" height="87" viewBox="0 0 89 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M46.4154 43.3286H73.561L77.7324 47.4792C77.7741 56.552 77.7116 62.4338 77.6803 71.5066L73.5089 75.6572H15.1714L11 71.4858V36.0286L15.1714 31.8572H34.9544L46.4154 43.3286Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.2998 27.6857V11H64.1855V16.2143" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.6855 27.6857V20.3857H73.5713V39.1572" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#filter0_f_107_20)">
+<path d="M46.4154 43.3286H73.561L77.7324 47.4792C77.7741 56.552 77.7116 62.4338 77.6803 71.5066L73.5089 75.6572H15.1714L11 71.4858V36.0286L15.1714 31.8572H34.9544L46.4154 43.3286Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.2998 27.6857V11H64.1855V16.2143" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.6855 27.6857V20.3857H73.5713V39.1572" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_f_107_20" x="-2.12866" y="-3.17139" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_107_20"/>
+</filter>
+</defs>
+</svg>
