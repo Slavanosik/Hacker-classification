@@ -1,10 +1,11 @@
+@ -0,0 +1,105 @@
 /* Переменные для удобного управления цветами */
 :root {
-    --bg-color: #f8f9fa;
-    --text-color: #212529;
-    --accent-color: #007bff;
-    --secondary-color: #ffffff;
-    --transition-speed: 0.3s;
+    --bg-color: #f8f9fa; /*Светлый фон*/
+    --text-color: #212529; /*Тёмный текст*/
+    --accent-color: #007bff; /*Синий акцент*/
+    --secondary-color: #ffffff; /*доп акцент*/
+    --transition-speed: 0.3s; /*Скорось анимации*/
 }
 
 /* Обнуление базовых отступов */
@@ -14,16 +15,9 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'uesc'; /* Название, которое ты сам придумал */
-    src: url('uesc.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; /* Чтобы текст не исчезал во время загрузки шрифта */
-}
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -31,7 +25,7 @@ body {
 
 /* Навигация (Шапка) */
 header {
-    font-family: 'uesc', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     background-color: var(--secondary-color);
     padding: 1rem 2rem;
     border-bottom: 2px solid var(--accent-color);
