@@ -9,9 +9,9 @@ async function loadHackerData(hackerId) {
 
         if (hacker) {
             // 3. Вставляем данные в элементы на странице
-            document.getElementById('hacker-title').textContent = hacker.title;
-            document.getElementById('hacker-desc').textContent = hacker.description;
-            document.getElementById('status-text').textContent = hacker.status;
+            document.getElementById('hacker-title').textContent = hacker.name;
+            document.getElementById('hacker-desc').textContent = hacker.full_text;
+            document.getElementById('status-text').textContent = hacker.date;
         }
     } catch (error) {
         console.error("Ошибка загрузки данных:", error);
