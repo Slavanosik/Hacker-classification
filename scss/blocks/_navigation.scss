@@ -1,0 +1,33 @@
+.navigation{
+    margin-left: 20px;
+    margin-top: 209px;
+    //margin-bottom: 183px;
+    width: 128px;
+
+    &_list{
+
+        display: grid;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        gap: 40px;
+    }
+
+    &_link{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    &_name{
+
+        font-family: $techmono;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.11em;
+        color: #01FF09;
+        text-align: center;
+    }
+}

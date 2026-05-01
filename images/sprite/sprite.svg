@@ -30,30 +30,29 @@
         </defs>
     </symbol>
 
-    <symbol width="99" height="96" viewBox="0 0 99 96" fill="none" xmlns="http://www.w3.org/2000/svg" id="folder-icon">
-        <path d="M45.2 65.0143V53.5429C45.2 52.3957 44.2614 51.4572 43.1143 51.4572H18.0857C16.9386 51.4572 16 52.3957 16 53.5429V65.0143C16 73.0756 22.5387 79.6143 30.6 79.6143C38.6613 79.6143 45.2 73.0756 45.2 65.0143Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M20.1714 51.4571V50.4143C20.1714 44.6577 24.8434 39.9857 30.6 39.9857C33.52 39.9857 36.1584 41.185 38.046 43.1143" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M33.155 67.4754L34.7715 72.3143H26.4286L28.045 67.4754C26.4599 66.5786 25.3857 64.8787 25.3857 62.9286C25.3857 60.0503 27.7217 57.7143 30.6 57.7143C33.4783 57.7143 35.8143 60.0503 35.8143 62.9286C35.8143 64.8787 34.7402 66.5786 33.155 67.4754Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16 47.2857V20.1714L20.1714 16H39.9544L51.4154 27.4714H78.561L82.7324 31.622C82.7741 40.6949 82.7116 62.2194 82.6803 71.2923L78.5089 75.4429H46.2429" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <g filter="url(#filter0_f_107_18)">
-            <path d="M45.2 65.0143V53.5429C45.2 52.3957 44.2614 51.4572 43.1143 51.4572H18.0857C16.9386 51.4572 16 52.3957 16 53.5429V65.0143C16 73.0756 22.5387 79.6143 30.6 79.6143C38.6613 79.6143 45.2 73.0756 45.2 65.0143Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M20.1714 51.4571V50.4143C20.1714 44.6577 24.8434 39.9857 30.6 39.9857C33.52 39.9857 36.1584 41.185 38.046 43.1143" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M33.155 67.4754L34.7715 72.3143H26.4286L28.045 67.4754C26.4599 66.5786 25.3857 64.8787 25.3857 62.9286C25.3857 60.0503 27.7217 57.7143 30.6 57.7143C33.4783 57.7143 35.8143 60.0503 35.8143 62.9286C35.8143 64.8787 34.7402 66.5786 33.155 67.4754Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16 47.2857V20.1714L20.1714 16H39.9544L51.4154 27.4714H78.561L82.7324 31.622C82.7741 40.6949 82.7116 62.2194 82.6803 71.2923L78.5089 75.4429H46.2429" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol width="99" height="92" viewBox="0 0 99 92" fill="none" xmlns="http://www.w3.org/2000/svg" id="folder-icon">
+        
+        <path d="M51.4154 27.4714H78.561L82.7324 31.622C82.7741 40.6949 82.7116 62.2194 82.6803 71.2923L78.5089 75.4429H20.1714L16 71.2714V20.1714L20.1714 16H39.9544L51.4154 27.4714Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34.7505 38.9429H82.6593" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 38.9429H24.3324" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <g filter="url(#filter0_f_107_19)">
+            <path d="M51.4154 27.4714H78.561L82.7324 31.622C82.7741 40.6949 82.7116 62.2194 82.6803 71.2923L78.5089 75.4429H20.1714L16 71.2714V20.1714L20.1714 16H39.9544L51.4154 27.4714Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.7505 38.9429H82.6593" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 38.9429H24.3324" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
         <defs>
-            <filter id="filter0_f_107_18" x="-2.12866" y="-3.17139" width="103" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter0_f_107_19" x="-2.12866" y="-5.25708" width="103" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_107_18"/>
+                <feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_107_19"/>
             </filter>
         </defs>
     </symbol>
 
-    <svg width="23" height="34" viewBox="0 0 23 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol width="23" height="34" viewBox="0 0 23 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.0036 4.14012L1.10755 16.2513" stroke="#01FF09" stroke-width="2" stroke-linecap="round"/>
         <path d="M21.6523 29.8051L11.328 23.118L1.00371 16.4308" stroke="#01FF09" stroke-width="2" stroke-linecap="round"/>
-    </svg>
+    </symbol>
 
 
 </svg>

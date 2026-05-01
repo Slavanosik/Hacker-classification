@@ -331,14 +331,13 @@ template {
   font-style: normal;
   font-display: swap;
 }
-font-face {
+@font-face {
   font-family: "TechMono";
   src: url("../fonts/ShareTechMonoRegular.woff2") format("woff2"), url("../fonts/ShareTechMonoRegular.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
 *,
 *::after,
 *::before {
@@ -346,14 +345,12 @@ font-face {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
-  font-family: "Resquare", "TechMono", "Arial", sans-serif;
+  font-family: "Resquare", "Arial", sans-serif, "TechMono", "Arial", sans-serif;
   color: #01FF09;
   background-color: #282626;
 }
@@ -379,7 +376,7 @@ textarea {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -396,4 +393,94 @@ textarea {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+html {
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.10626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.10626;
+  }
+  30% {
+    opacity: 0.18128;
+  }
+  35% {
+    opacity: 0.23604;
+  }
+}
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.navigation {
+  margin-left: 20px;
+  margin-top: 209px;
+  width: 128px;
+}
+.navigation_list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 40px;
+}
+.navigation_link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation_name {
+  font-family: "TechMono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.11em;
+  color: #01FF09;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
