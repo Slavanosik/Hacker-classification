@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,66 @@
     <div class="crt"></div>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
     <main>
-        <section class="navigation-wrapper">
-          <nav class="navigation">
-            <ul class="navigation_list">
-                <li class="list-item">
-                    <a class="navigation_link" href="#">
-                        <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
-                        </svg>
-                        <span class="navigation_name">Типы хакеров</span>
-                    </a>
+        <div class="wrapper">
+            <div class="window">
+                <nav class="navigation">
+                    <ul class="navigation_list">
+                        <li class="list-item">
+                            <a class="navigation_link" href="#">
+                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
+                                </svg>
+                                <span class="navigation_name">Типы хакеров</span>
+                            </a>
 
-                </li>
-                <li class="list-item">
-                    <a class="navigation_link" href="#">
-                        <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="../images/sprite/sprite.svg#lock-folder-icon"></use>
-                        </svg>
-                        <span class="navigation_name">Методы атак</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a class="navigation_link" href="#">
-                        <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="../images/sprite/sprite.svg#folder-icon"></use>
-                        </svg>
-                        <span class="navigation_name">Этика и закон</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a class="navigation_link" href="#">
-                        <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
-                        </svg>
-                        <span class="navigation_name">Реальные кейсы</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Классификация хакеров.</p>
-            <p>Контактная информация: <a href="mailto:info@hackerclassify.ru">info@hackerclassify.ru</a></p>
+                        </li>
+                        <li class="list-item">
+                            <a class="navigation_link" href="#">
+                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="../images/sprite/sprite.svg#lock-folder-icon"></use>
+                                </svg>
+                                <span class="navigation_name">Методы атак</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="navigation_link" href="#">
+                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="../images/sprite/sprite.svg#folder-icon"></use>
+                                </svg>
+                                <span class="navigation_name">Этика и закон</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="navigation_link" href="#">
+                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
+                                </svg>
+                                <span class="navigation_name">Реальные кейсы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="pseudo-footer">
+                <div class="time-wrapper">
+                    <time datetime="2026-05-10" id="date-tag"></time>
+                    <time datetime="0:26" id="time-tag"></time>
+                </div>
+            </div>
         </div>
-    </footer>
-
+    </main>
+    <script>
+        document.getElementById('date-tag').textContent = new Date().toLocaleDateString();
+        var timeElement = document.getElementById('time-tag');
+        function changeClock() {
+            timeElement.textContent = new Date().toLocaleTimeString();
+        }
+        setInterval(changeClock, 1000);
+    </script>
 </body>
+
 </html>

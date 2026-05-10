@@ -345,7 +345,6 @@ template {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -353,9 +352,13 @@ body {
   font-family: "Resquare", "Arial", sans-serif, "TechMono", "Arial", sans-serif;
   color: #01FF09;
   background-color: #282626;
+  height: 100dvh;
+  max-width: 100vw;
 }
 
 main {
+  height: 100%;
+  width: 100%;
   flex-grow: 1;
 }
 
@@ -457,17 +460,26 @@ html {
   animation: flicker 0.15s infinite;
 }
 
-.navigation {
-  margin-left: 20px;
-  margin-top: 209px;
-  width: 128px;
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+.window {
+  display: flex;
+  height: 100%;
+}
+
 .navigation_list {
   display: grid;
   margin: 0;
   padding: 0;
   list-style-type: none;
   gap: 40px;
+  width: 11.2vh;
 }
 .navigation_link {
   display: flex;
@@ -483,4 +495,24 @@ html {
   letter-spacing: -0.11em;
   color: #01FF09;
   text-align: center;
+}
+
+.pseudo-footer {
+  border-top: 4px solid #01FF09;
+  width: 100%;
+  height: 16.1dvh;
+  text-align: right;
+}
+
+.time-wrapper {
+  padding-top: 1%;
+  padding-right: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+}
+
+svg {
+  width: 11.2vh;
+  height: 11.2vh;
 }/*# sourceMappingURL=style.css.map */
