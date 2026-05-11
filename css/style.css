@@ -380,7 +380,7 @@ textarea {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0 20px;
   width: 100%;
 }
@@ -479,7 +479,6 @@ html {
   padding: 0;
   list-style-type: none;
   gap: 40px;
-  width: 11.2vh;
 }
 .navigation_link {
   display: flex;
@@ -515,4 +514,29 @@ html {
 svg {
   width: 11.2vh;
   height: 11.2vh;
+}
+
+.header {
+  border-bottom: 2px solid #01FF09;
+  height: 60px;
+}
+
+.page_heading {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: -0.06em;
+  text-align: left;
+  margin: 10px auto 30px 20px;
+}
+
+.home_icon {
+  font-size: 64px;
+  margin: 10px 0 0 20px;
+  color: #01FF09;
+}
+
+.banner-image {
+  width: 100%;
+  height: 400px;
 }/*# sourceMappingURL=style.css.map */
