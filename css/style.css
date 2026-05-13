@@ -530,13 +530,35 @@ svg {
   margin: 10px auto 30px 20px;
 }
 
-.home_icon {
+.home_link {
+  position: absolute;
+  top: 10px;
+  left: 40px;
   font-size: 64px;
-  margin: 10px 0 0 20px;
   color: #01FF09;
 }
 
 .banner-image {
   width: 100%;
-  height: 400px;
+  height: 450px;
+  margin-bottom: 60px;
+}
+
+.page_wrapper {
+  gap: 300px;
+  font-family: "TechMono", "Arial", sans-serif;
+  color: #ffffff;
+  display: flex;
+}
+.page_main-content {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+.page_inner-heading {
+  font-family: "Resquare", "Arial", sans-serif;
+  color: #01FF09;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.06em;
 }/*# sourceMappingURL=style.css.map */

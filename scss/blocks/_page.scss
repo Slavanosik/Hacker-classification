@@ -12,14 +12,43 @@
     margin: 10px auto 30px 20px;
 }
 
-.home_icon {
+.home_link {
+    position: absolute;
+    top: 10px;
+    left: 40px;
     font-size: 64px;
-    margin: 10px 0 0 20px;
     color: $color-green;
 }
 
 .banner-image{
     width: 100%;
-    height: 400px;
-    
+    height: 450px;
+    margin-bottom: 60px;
+    //position: absolute;
+    //left: 0;  
+}
+
+.page{
+
+    &_wrapper{
+        gap: 300px;
+        font-family: $techmono;
+        color: $color-white;
+        display: flex;
+    }
+
+    &_main-content{
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+    }
+
+    &_inner-heading{
+        font-family: $resq;
+        color: $color-green;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.06em;
+    }
+
 }
