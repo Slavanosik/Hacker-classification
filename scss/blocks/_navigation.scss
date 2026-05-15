@@ -18,11 +18,6 @@
         padding: 0;
         list-style-type: none;
         gap: 40px;
-        width: calc(100vh * 11.2 / 100);
-
-        // position: absolute;
-        // top: 5%;
-        // left: 2%;
     }
 
     &_link{
@@ -39,14 +34,14 @@
         font-size: 24px;
         line-height: 24px;
         letter-spacing: -0.11em;
-        color: #01FF09;
+        color: $color-green;
         text-align: center;
     }
 }
 
 .pseudo-footer{
 
-    border-top: 4px solid #01FF09;
+    border-top: 4px solid $color-green;
     width: 100%;
     height: calc(100dvh * 16.1 / 100);
     text-align: right;
