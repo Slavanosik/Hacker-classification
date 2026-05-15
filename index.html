@@ -6,52 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Классификация хакеров | Главная</title>
     <div class="crt"></div>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <main>
         <div class="wrapper">
-            <div class="window">
-                <nav class="navigation">
-                    <ul class="navigation_list">
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
-                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
-                                </svg>
-                                <span class="navigation_name">Типы хакеров</span>
-                            </a>
+    <nav class="desktop-icons">
+        <ul class="navigation_list">
+            <li class="list-item">
+                <a class="navigation_link" href="#">
+                    <svg width="89" height="87"><use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use></svg>
+                    <span class="navigation_name">Типы хакеров</span>
+                </a>
+            </li>
+            </ul>
+    </nav>
 
-                        </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
-                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="../images/sprite/sprite.svg#lock-folder-icon"></use>
-                                </svg>
-                                <span class="navigation_name">Методы атак</span>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
-                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="../images/sprite/sprite.svg#folder-icon"></use>
-                                </svg>
-                                <span class="navigation_name">Этика и закон</span>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
-                                <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
-                                </svg>
-                                <span class="navigation_name">Реальные кейсы</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <section class="win-frame" id="window-explorer">
+        <div class="win-header">
+            <span class="win-title">C:\USER\ТИПЫ ХАКЕРОВ</span>
+            <button class="win-close" onclick="closeWindow('window-explorer')">X</button>
+        </div>
+        <div class="win-content">
+            <table class="hacker-table">
+                <thead>
+                    <tr><th>НАЗВАНИЕ</th><th>ОПИСАНИЕ</th><th>DATA</th></tr>
+                </thead>
+                <tbody id="hacker-table-body">
+                    <tr onclick="loadHackerData('white-hat')">
+                        <td>WHITE-HAT.TXT</td>
+                        <td>ЭТИЧНЫЕ ХАКЕРЫ</td>
+                        <td>24.04.2026</td>
+                    </tr>
+                    <tr onclick="loadHackerData('black-hat')">
+                        <td>BLACK-HAT.TXT</td>
+                        <td>ЗЛОВЕЩИЕ ХАКЕРЫ</td>
+                        <td>67.69.1377</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="win-frame info-popup" id="window-info">
+        <div class="win-header">
+            <span class="win-title">INFO</span>
+            <button class="win-close" onclick="closeWindow('window-info')">X</button>
+        </div>
+        <div class="win-content">
+            <h2 id="hacker-title">ПРИВЕТ!</h2>
+            <p id="hacker-desc">Добро пожаловать в мини-энциклопедию по типам хакеров, их мотивам, методам и способам защиты. Мы собрали для тебя всё, что нужно знать первокурснику ИБ или начинающему специалисту, чтобы не потеряться в ландшафте угроз. Всё строго образовательно! Никакой пропаганды взлома — только проверенные источники, разбор реальных кейсов и чёткая структура.</p>
+        </div>
+    </section>
+
+    <div class="pseudo-footer">...</div>
+</div>
             <div class="pseudo-footer">
                 <div class="time-wrapper">
                     <time datetime="2026-05-10" id="date-tag"></time>
@@ -67,6 +78,27 @@
             timeElement.textContent = new Date().toLocaleTimeString();
         }
         setInterval(changeClock, 1000);
+
+        function closeWindow(id) {
+    const win = document.getElementById(id);
+    if (win) {
+        win.style.display = 'none';
+    }
+}
+        async function loadHackerData(hackerId) {
+    document.querySelectorAll('.hacker-table tr').forEach(tr => tr.classList.remove('selected'));
+    event.currentTarget.classList.add('selected');
+}
+
+function closeWindow(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function openWindow(id) {
+    const win = document.getElementById(id);
+    win.style.display = 'block';
+    win.style.zIndex = 100;
+}
     </script>
 </body>
 
