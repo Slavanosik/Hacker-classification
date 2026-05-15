@@ -4,7 +4,6 @@
 }
 
 .page_heading {
-    font-weight: 500;
     font-size: 70px;
     line-height: 70px;
     letter-spacing: -0.06em;
@@ -23,9 +22,7 @@
 .banner-image{
     width: 100%;
     height: 450px;
-    margin-bottom: 60px;
-    //position: absolute;
-    //left: 0;  
+    margin-bottom: 60px; 
 }
 
 .page{
@@ -44,11 +41,54 @@
     }
 
     &_inner-heading{
+        position: relative;
         font-family: $resq;
         color: $color-green;
         font-size: 48px;
-        line-height: 48px;
+        font-weight: 500;
         letter-spacing: -0.06em;
+
+        &::before{
+            content: ">";
+            position: absolute;
+            top: -50%;
+            left: -30px;
+            transform: translateY(50%);
+        }
     }
 
+    &_navigation{
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+    }
+
+    &_nav-wrapper{
+        font-family: $resq;
+        text-transform: uppercase;
+        
+        padding-left: 10px;
+        
+    }
+}
+
+.nav-link{
+    color: $color-white;
+    &:hover{
+        color: $color-green;
+    }
+}
+
+.nav-heading{
+    color: $color-green;
+    position: relative;
+    padding: 10px;
+    &::before{
+            content: "";
+            width: 2px;
+            position: absolute;
+            height: 200px;
+            background-color: $color-green;
+            left:0;
+        }
 }

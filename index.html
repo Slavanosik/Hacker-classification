@@ -16,46 +16,87 @@
             <div class="window">
                 <nav class="navigation">
                     <ul class="navigation_list">
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
+                        <li class="list-item" onclick="openWindow('window-explorer')">
+                            <div class="navigation_link">
                                 <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
                                 </svg>
                                 <span class="navigation_name">Типы хакеров</span>
-                            </a>
+                            </div>
 
                         </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="page.html">
+                        <li class="list-item" onclick="openWindow('window-explorer')">
+                            <div class="navigation_link">
                                 <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="../images/sprite/sprite.svg#lock-folder-icon"></use>
                                 </svg>
                                 <span class="navigation_name">Методы атак</span>
-                            </a>
+                            </div>
                         </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
+                        <li class="list-item" onclick="openWindow('window-explorer')">
+                            <div class="navigation_link">
                                 <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="../images/sprite/sprite.svg#folder-icon"></use>
                                 </svg>
                                 <span class="navigation_name">Этика и закон</span>
-                            </a>
+                            </div>
                         </li>
-                        <li class="list-item">
-                            <a class="navigation_link" href="#">
+                        <li class="list-item" onclick="openWindow('window-explorer')">
+                            <div class="navigation_link">
                                 <svg width="89" height="87" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="../images/sprite/sprite.svg#files-folder-icon"></use>
                                 </svg>
                                 <span class="navigation_name">Реальные кейсы</span>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
             </div>
+            <section class="win-frame" id="window-explorer">
+                <div class="win-header">
+                    <span class="win-title">C:\USER\МЕТОДЫ АТАК</span>
+                    <button class="win-close" onclick="closeWindow('window-explorer')">X</button>
+                </div>
+                <div class="win-content">
+                    <table class="hacker-table">
+                        <thead>
+                            <tr>
+                                <th>НАЗВАНИЕ</th>
+                                <th>ОПИСАНИЕ</th>
+                                <th>ДАТА</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hacker-table-body">
+                            <tr onclick="loadHackerData('page')">
+                                <td>DDoS-Attack.TXT</td>
+                                <td>DDOS-АТАКИ</td>
+                                <td>24.04.2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="win-frame win-frame--info-popup" id="window-info">
+                <div class="win-header">
+                    <span class="win-title">Инструкция</span>
+                    <button class="win-close" onclick="closeWindow('window-info')">X</button>
+                </div>
+                <div class="win-content">
+                    <h2 class="hacker-title">Привет!</h2>
+                    <p class="hacker-desc">Добро пожаловать в&nbsp;мини-энциклопедию по&nbsp;типам хакеров,
+                        их&nbsp;мотивам, методам и
+                        способам защиты. Мы&nbsp;собрали для тебя всё, что нужно знать первокурснику&nbsp;ИБ или
+                        начинающему
+                        специалисту, чтобы не&nbsp;потеряться в&nbsp;ландшафте угроз. Всё строго образовательно! Никакой
+                        пропаганды взлома&nbsp;&mdash; только проверенные источники, разбор реальных кейсов
+                        и&nbsp;чёткая структура.</p>
+                </div>
+            </section>
             <div class="pseudo-footer">
                 <div class="time-wrapper">
                     <time datetime="0:26" id="time-tag"></time>
-                    <time datetime="2026-05-10" id="date-tag"></time>                  
+                    <time datetime="2026-05-10" id="date-tag"></time>
                 </div>
             </div>
         </div>
@@ -67,6 +108,29 @@
             timeElement.textContent = new Date().toLocaleTimeString();
         }
         setInterval(changeClock, 1000);
+
+        function closeWindow(id) {
+            const win = document.getElementById(id);
+            if (win) {
+                win.style.display = 'none';
+            }
+        }
+
+        async function loadHackerData(hackerId) {
+            document.querySelectorAll('.hacker-table tr').forEach(tr => tr.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            window.location.href = "page.html";
+        }
+
+        function closeWindow(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        function openWindow(id) {
+            const win = document.getElementById(id);
+            win.style.display = 'block';
+            win.style.zIndex = 100;
+        }
     </script>
 </body>
 

@@ -21,13 +21,6 @@
             <path d="M33.155 67.4754L34.7715 72.3143H26.4286L28.045 67.4754C26.4599 66.5786 25.3857 64.8787 25.3857 62.9286C25.3857 60.0503 27.7217 57.7143 30.6 57.7143C33.4783 57.7143 35.8143 60.0503 35.8143 62.9286C35.8143 64.8787 34.7402 66.5786 33.155 67.4754Z" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M16 47.2857V20.1714L20.1714 16H39.9544L51.4154 27.4714H78.561L82.7324 31.622C82.7741 40.6949 82.7116 62.2194 82.6803 71.2923L78.5089 75.4429H46.2429" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
-        <defs>
-            <filter id="filter0_f_107_18" x="-2.12866" y="-3.17139" width="103" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_107_18"/>
-            </filter>
-        </defs>
     </symbol>
 
     <symbol width="99" height="92" viewBox="0 0 99 92" fill="none" xmlns="http://www.w3.org/2000/svg" id="folder-icon">
@@ -40,13 +33,6 @@
             <path d="M34.7505 38.9429H82.6593" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M16 38.9429H24.3324" stroke="#01FF09" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
-        <defs>
-            <filter id="filter0_f_107_19" x="-2.12866" y="-5.25708" width="103" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_107_19"/>
-            </filter>
-        </defs>
     </symbol>
 
     <symbol width="23" height="34" viewBox="0 0 23 34" fill="none" xmlns="http://www.w3.org/2000/svg">
