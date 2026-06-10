@@ -22,23 +22,26 @@
             class="banner-image">
         <div class="page_wrapper">
             <div class="page_nav-wrapper">
+                <span class="nav-heading">C:\USER\Навигация</span>
                 <nav class="page_navigation">
                     <ul>
-                        <li><a href='#what'>Что это такое?</a></li>
-                        <li><a href='#how'>Как это работает?</a></li>
-                        <li><a href='#kinds'>Виды атак</a></li>
+                        <li><a class="nav-link" href='#what'>Что это такое?</a></li>
+                        <li><a class="nav-link" href='#how'>Как это работает?</a></li>
+                        <li><a class="nav-link" href='#kinds'>Виды атак</a></li>
+                        <li><a class="nav-link" href='#fight'>Как бороться с атаками</a></li>
+                        <li><a class="nav-link" href='#secure'>Защита</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="page_content-wrapper">
-                <h2 id="what" class="page_inner-heading">&gt;Что это такое?</h2>
+                <h2 id="what" class="page_inner-heading">Что это такое?</h2>
                 <span class="page_main-content"><i>DDoS-атака (Distributed Denial of&nbsp;Service, &laquo;атака
                         на&nbsp;отказ в&nbsp;обслуживании&raquo;)</i>&nbsp;&mdash; это тип кибератаки, при которой
                     злоумышленники отправляют поддельные запросы на&nbsp;сервер или сеть с&nbsp;целью перегрузить
                     их&nbsp;и&nbsp;сделать недоступными для обычных пользователей. Запросы могут поступать как
                     от&nbsp;множества источников к&nbsp;одному ресурсу, так и&nbsp;от&nbsp;одного источника сразу
                     к&nbsp;нескольким ресурсам.</span>
-                <h2 id="how" class="page_inner-heading">&gt;Как это работает?</h2>
+                <h2 id="how" class="page_inner-heading">Как это работает?</h2>
                 <ol class="page_list">
                     <li class="list-item">Злоумышленник заражает устройства вредоносным&nbsp;ПО (или арендует готовый
                         ботнет).</li>
@@ -55,7 +58,7 @@
                     к&nbsp;базам данных и&nbsp;другим внутренним сервисам, что еще больше перегружает систему.
                     Многократные обращения к&nbsp;одним и&nbsp;тем&nbsp;же файлам или страницам сайта исчерпывают
                     ресурсы сервера, который не&nbsp;справляется с&nbsp;обработкой запросов.</span>
-                <h2 id="kinds" class="page_inner-heading">&gt;Виды DDoS-атак</h2>
+                <h2 id="kinds" class="page_inner-heading">Виды DDoS-атак</h2>
                 <ul class="page_list">
                     <li class="list-item">Объемные&nbsp;&mdash; кибератака, направленная на&nbsp;перегрузку каналов
                         связи, иными словами, различные типы флуда (большого количества неправильно сформированных или
@@ -68,23 +71,39 @@
                     <li class="list-item">Атаки прикладного уровня (Application Layer DDoS attack)&nbsp;&mdash;
                         направлена на&nbsp;исчерпание ресурсов сервера.<br><b>Примеры:</b> HTTP Flood, Slowloris.</li>
                 </ul>
-                <h2 class="page_inner-heading">&gt;Как бороться с DDoS-атаками?</h2>
-                <span class="page_main-content">Хотя DDoS-атаки сложно обнаружить, можно реализовать ряд мер, чтобы попытаться предотвратить подобные типы кибератак и&nbsp;смягчить любой ущерб в&nbsp;случае атаки. Основные методы:</span>
+                <h2 id="fight" class="page_inner-heading">Как бороться с DDoS-атаками?</h2>
+                <span class="page_main-content">Хотя DDoS-атаки сложно обнаружить, можно реализовать ряд мер, чтобы
+                    попытаться предотвратить подобные типы кибератак и&nbsp;смягчить любой ущерб в&nbsp;случае атаки.
+                    Основные методы:</span>
                 <ul class="page-list">
                     <li class="list-item">Регулярно обновлять&nbsp;ПО;</li>
-                    <li class="list-item">Использовать межсетевые экраны (WAF, Web Application Firewall). Это помогает фильтровать запросы уровня приложений, блокируя HTTP-флуд и&nbsp;другие атаки.</li>
+                    <li class="list-item">Использовать межсетевые экраны (WAF, Web Application Firewall). Это помогает
+                        фильтровать запросы уровня приложений, блокируя HTTP-флуд и&nbsp;другие атаки.</li>
                     <li class="list-item">Отслеживать сетевой трафик.</li>
                 </ul>
-                <h2 class="page_inner-heading">&gt;Виды защиты от DDoS-атак.</h2>
+                <h2 id="secure" class="page_inner-heading">Виды защиты от DDoS-атак.</h2>
                 <ul class="page-list">
-                    <li class="list-item">Облачная защита (Cloud-based): Трафик идет через сеть провайдера, где очищается. Подходит для большинства, так как не&nbsp;требует оборудования.</li>
-                    <li class="list-item">Локальная защита (On-premise): Специализированное оборудование, установленное непосредственно в&nbsp;инфраструктуре компании.</li>
-                    <li class="list-item">Гибридная защита: Сочетает облачную фильтрацию (против объемных атак) и&nbsp;локальные устройства (для защиты от&nbsp;сложных атак на&nbsp;приложения).</li>
+                    <li class="list-item">Облачная защита (Cloud-based): Трафик идет через сеть провайдера, где
+                        очищается. Подходит для большинства, так как не&nbsp;требует оборудования.</li>
+                    <li class="list-item">Локальная защита (On-premise): Специализированное оборудование, установленное
+                        непосредственно в&nbsp;инфраструктуре компании.</li>
+                    <li class="list-item">Гибридная защита: Сочетает облачную фильтрацию (против объемных атак)
+                        и&nbsp;локальные устройства (для защиты от&nbsp;сложных атак на&nbsp;приложения).</li>
                 </ul>
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
