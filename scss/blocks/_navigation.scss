@@ -56,6 +56,23 @@
     gap: 15%;
 }
 
+.desktop-icons {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 120px;
+    z-index: 5;
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 // svg{
 //     width: calc(100vh * 11.2 / 100);
 //     height: calc(100vh * 11.2 / 100);
